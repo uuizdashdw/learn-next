@@ -1,10 +1,12 @@
-import ProductsList from '@/components/ProductsList';
+import ProductHeader from '@/components/ProductHeader';
+import ProductsList from '@/components/product-list/ProductsList';
 
 function ProductPage() {
+  const headerTitle = '상품 목록 페이지';
   return (
     <div>
-      <h1>상품목록 페이지</h1>
-      <ProductsList />
+      <ProductHeader title={headerTitle} />
+      <ProductsList></ProductsList>
     </div>
   );
 }
